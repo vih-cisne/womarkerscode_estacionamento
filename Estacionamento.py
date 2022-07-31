@@ -99,7 +99,7 @@ class Estacionamento:
     def __str__(self):
         self.atualizar_qtd_vagas_moto_livres()
         self.atualizar_qtd_vagas_carro_livres()
-        return f'Estacionamento - vagas livres de carro {self.total_vagas_livres_carro} vagas livres de moto - {self.total_vagas_livres_moto} - total vagas livres {self.total_vagas_livres_carro + self.total_vagas_livres_moto} '
+        return f'Estacionamento - vagas livres de carro: {self.total_vagas_livres_carro} - vagas livres de moto: {self.total_vagas_livres_moto} - total vagas livres: {self.total_vagas_livres_carro + self.total_vagas_livres_moto} '
 
 
 estacionamento = Estacionamento(4,1,3)
@@ -113,8 +113,10 @@ carro2.estacionar(estacionamento)
 
 
 moto1 = Moto('***111')
+print(moto1)
 print(estacionamento.vagas_de_moto[0])
 moto1.estacionar(estacionamento)
+print(moto1)
 print(estacionamento.vagas_de_moto[0])
 
 moto2 = Moto('***222')
@@ -124,16 +126,14 @@ moto3 = Moto('***333')
 moto3.estacionar(estacionamento)
 
 carro2.sair_da_vaga(estacionamento)
-carro1.sair_da_vaga(estacionamento)
+
 
 carro3 = Carro('###333')
 carro3.estacionar(estacionamento)
 
-moto3 = Moto('***333')
-moto3.estacionar(estacionamento)
 
-moto4 = Moto('***444')
-moto4.estacionar(estacionamento)
+
+
 
 
 #testes com metodos de listas

@@ -1,6 +1,8 @@
 # Estacionamento
 ## Exercício proposto em uma das aulas de python promovidas pela WoMarkersCode em parceria com a Instruct
 
+ <img align="center" alt="parking" width="180" src="animation_500_l6cbp7ws.gif">
+
 #### Requisitos:
 
  * O estacionamento é um pátio de apenas um andar. Ele possui 50 vagas.
